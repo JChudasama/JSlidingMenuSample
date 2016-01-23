@@ -2,4 +2,5 @@
 <resources>
     <color name="color_header">#50aa6d</color>
     <color name="color_sliding_menu_list_bg">#2f2f2f</color>
+    <color name="color_marker_bg">#01a2dd</color>
 </resources>

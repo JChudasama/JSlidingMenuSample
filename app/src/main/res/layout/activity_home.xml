@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -12,22 +13,27 @@
         android:layout_alignParentTop="true" />
 
 
-    <FrameLayout
+    <LinearLayout
         android:id="@+id/content_frame"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@+id/vl1"
         android:layout_below="@+id/llHeader"
         android:layout_centerHorizontal="true"
-        android:background="@android:color/transparent"
-        android:foregroundGravity="top">
-    </FrameLayout>
+        android:background="@android:color/transparent">
+
+        <fragment
+            android:id="@+id/mapParking"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
 
     <View
         android:id="@+id/vl1"
-        android:visibility="gone"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_12sdp"
         android:layout_alignParentBottom="true"
-         />
+        android:visibility="gone" />
 </RelativeLayout>
