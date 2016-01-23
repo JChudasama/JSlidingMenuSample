@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llHeaderContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_header"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/_5sdp"
+    android:paddingLeft="@dimen/_5sdp"
+    android:paddingRight="@dimen/_5sdp"
+    android:paddingTop="@dimen/_5sdp">
+
+    <ImageView
+        android:id="@+id/ivDrawer"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/_5sdp"
+        android:src="@drawable/icon_drawer"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/_5sdp"
+        android:src="@drawable/icon_back"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:padding="@dimen/_5sdp"
+        android:text="@string/app_name"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_20sdp"
+        android:textStyle="bold" />
+
+    <!--
+
+         <ImageView
+             android:id="@+id/ivClose"
+             android:layout_width="@dimen/_35sdp"
+             android:layout_height="@dimen/_35sdp"
+             android:layout_alignParentLeft="true"
+             android:padding="@dimen/_5sdp"
+             android:src="@drawable/icon_close"
+             android:visibility="gone" />
+
+
+
+
+
+         <ImageView
+             android:id="@+id/ivSend"
+             android:layout_width="@dimen/_35sdp"
+             android:layout_height="@dimen/_35sdp"
+             android:padding="@dimen/_5sdp"
+             android:src="@drawable/icon_send"
+             android:visibility="gone" />
+
+
+         <TextView
+             android:id="@+id/tvDone"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentRight="true"
+             android:gravity="center"
+             android:padding="@dimen/_5sdp"
+             android:text="@string/str_done"
+             android:textSize="@dimen/_19sdp"
+             android:visibility="gone" />-->
+
+</RelativeLayout>
